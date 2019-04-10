@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <title>Playground</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Only While I Dream..." />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <style>
+      .displayNone {
+        display: none;
+      }
+    </style>
+    <script>
+      function toggleDisplay(elemToToggleId) {
+        var elemToToggle = document.getElementById(elemToToggleId);
+        if(elemToToggle.style.display == "none") {
+          elemToToggle.style.display = "block";
+        } else if(elemToToggle.style.display == "block") {
+          elemToToggle.style.display = "none";
+        }
+      }
+    </script>
+</head>
+
+
+<body bgcolor="#E6E6FA">
+  <h1>My Playground</h1>
+  <button onclick="toggleDisplay('poetryList')">Hide and Seek</button>
+
+  <ul id="poetryList" style="display:none;">
+    <li><a href="poetry/coco.html">Coco</a> - October 7, 2014 for Literary Genres</li>
+  </ul>
+
+  <p><a href="http://www.bacobu.com/index.html">Home</a></p>
+  <p><a href="http://www.bacobu.com/poetry.html">Poetry</a></p>
+  <p><a href="http://www.bacobu.com/projects/projects.html">Projects</a></p>
+
+</body>
+</html>
