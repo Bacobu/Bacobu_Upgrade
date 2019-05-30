@@ -1,4 +1,17 @@
 /*
+ * CSS on default HTML elements
+ */
+button {
+	padding: 0.5em;
+	font-size: 1em;
+}
+
+
+/*
+ * In-house classes
+ */
+
+/*
  * Thank you, https://www.cssmatic.com/box-shadow for the box shadow tool
  */
 .productCard {

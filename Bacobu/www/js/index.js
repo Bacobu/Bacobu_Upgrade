@@ -21,11 +21,20 @@ bacobuStore.factory('populateProducts', ['productList', function(productList) {
  */
 bacobuStore.controller('IndexCtrl', ['$scope', 'populateProducts', function($scope,populateProducts) {
 	$scope.pageTitle = 'Welcome to Bacobu Jewelry!';
-	$scope.pageDescription = 'Current status: Product cards will auto-wrap with screen size adjustment. Products are generated from a JSON array pasted into Angular 1. Accessible alt text is present on images.';
+	$scope.pageDescription = 'Current status: Product cards will auto-wrap with screen size adjustment. Products are generated from a JSON array pasted into Angular 1. Accessible alt text is present on images. Cart increments by one when an item is added.';
 	$scope.productList = populateProducts;
 	//TODO: Load language from elsewhere.
 	$scope.productCardDefaultText = {
 		'id': 'Product ID: ',
-		'name': 'Product Name: '
+		'name': 'Product Name: ',
+		'addToCartBtn': 'Add to Cart'
+	};
+	//TODO: Move cart information into appropriate provider type
+	//TODO: Function to increment num items in cart
+	$scope.cart = {
+		'numItems': 0
+	};
+	$scope.cart.updateCart = function() {
+		$scope.cart.numItems++;
 	};
 }]);
