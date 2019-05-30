@@ -1,9 +1,11 @@
-
 /*
- * Added only to get the structure committed.
+ * Thank you, https://www.cssmatic.com/box-shadow for the box shadow tool
  */
- 
-.testCss {
-	display: none;
+.productCard {
+	margin: 0.5em;
+	display: inline-block;
+	-webkit-box-shadow: 4px 6px 5px 0px rgba(148,148,148,1);
+	-moz-box-shadow: 4px 6px 5px 0px rgba(148,148,148,1);
+	box-shadow: 4px 6px 5px 0px rgba(148,148,148,1);
+	background-color: blue;
 }
-

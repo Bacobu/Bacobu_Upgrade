@@ -3,15 +3,14 @@
 	<head>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.js"></script>
 		<script src="js/index.js"></script>
+		<link rel="stylesheet" type="text/css" href="style/bacobu.css"/>
 		<title>
 			{{pageTitle}}
 		</title>
-		<style type="text/css"></style>
 		<meta charset="utf-8">
 		<meta name="description" content="Bacobu Online Store">
 		<meta name="keywords" content="bacobu,jewelry,silver,gemstone">
 		<meta name="author" content="Jessica Swanson">
-		<link rel="stylesheet" type="text/css" href="">
 	</head>
 	<body>
 		<h1>
@@ -22,13 +21,15 @@
 		</p>
 		<div>
 			<div ng-repeat="product in productList track by product.id">
-				<p>
-					{{product.id}}
-				</p>
-				<p>
-					{{product.name}}
-				</p>
-				<img ng-src="{{product.imageLocation.mainImg}}"/>
+				<div class="productCard">
+					<p>
+						{{product.id}}
+					</p>
+					<p>
+						{{product.name}}
+					</p>
+					<img ng-src="{{product.imageLocation.mainImg}}"/>
+				</div>
 			</div>
 		</div>
 	</body>
