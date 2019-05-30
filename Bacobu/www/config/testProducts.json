@@ -1,0 +1,59 @@
+{
+	"products": [{
+			"id": 0,
+			"name": "Test Necklace",
+			"price": 25.00,
+			"imageLocation": {
+				"mainImg": "images/testNecklace.jpg"
+			}
+		},
+		{
+			"id": 1,
+			"name": "Test Necklace",
+			"price": 25.00,
+			"imageLocation": {
+				"mainImg": "images/testNecklace.jpg"
+			}
+		},
+		{
+			"id": 2,
+			"name": "Test Necklace",
+			"price": 25.00,
+			"imageLocation": {
+				"mainImg": "images/testNecklace.jpg"
+			}
+		},
+		{
+			"id": 3,
+			"name": "Test Necklace",
+			"price": 25.00,
+			"imageLocation": {
+				"mainImg": "images/testNecklace.jpg"
+			}
+		},
+		{
+			"id": 4,
+			"name": "Test Necklace",
+			"price": 25.00,
+			"imageLocation": {
+				"mainImg": "images/testNecklace.jpg"
+			}
+		},
+		{
+			"id": 5,
+			"name": "Test Necklace",
+			"price": 25.00,
+			"imageLocation": {
+				"mainImg": "images/testNecklace.jpg"
+			}
+		},
+		{
+			"id": 6,
+			"name": "Test Necklace",
+			"price": 25.00,
+			"imageLocation": {
+				"mainImg": "images/testNecklace.jpg"
+			}
+		}
+	]
+}

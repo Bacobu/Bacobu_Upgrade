@@ -2,7 +2,7 @@
 <html lang="en" ng-app="bacobuStore" ng-controller="IndexCtrl">
 	<head>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.js"></script>
-		<script src="../www/js/index.js"></script>
+		<script src="js/index.js"></script>
 		<title>
 			{{pageTitle}}
 		</title>
@@ -21,8 +21,15 @@
 			{{pageDescription}}
 		</p>
 		<div>
-			<!--<div ng-repeat="product in productList">
-			</div> -->
+			<div ng-repeat="product in productList track by product.id">
+				<p>
+					{{product.id}}
+				</p>
+				<p>
+					{{product.name}}
+				</p>
+				<img ng-src="{{product.imageLocation.mainImg}}"/>
+			</div>
 		</div>
 	</body>
 </html>
