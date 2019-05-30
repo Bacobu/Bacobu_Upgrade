@@ -20,16 +20,14 @@
 			{{pageDescription}}
 		</p>
 		<div>
-			<div ng-repeat="product in productList track by product.id">
-				<div class="productCard">
-					<p>
-						{{product.id}}
-					</p>
-					<p>
-						{{product.name}}
-					</p>
-					<img ng-src="{{product.imageLocation.mainImg}}"/>
-				</div>
+			<div ng-repeat="product in productList track by product.id" class="productCard">
+				<p class="productCardInfo">
+					{{productCardDefaultText.id}} {{product.id}}
+				</p>
+				<p class="productCardInfo">
+					{{productCardDefaultText.name}} {{product.name}}
+				</p>
+				<img ng-src="{{product.imageLocation.mainImg}}"/>
 			</div>
 		</div>
 	</body>

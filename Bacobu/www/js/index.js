@@ -23,4 +23,9 @@ bacobuStore.controller('IndexCtrl', ['$scope', 'populateProducts', function($sco
 	$scope.pageTitle = 'Welcome to Bacobu Jewelry!';
 	$scope.pageDescription = 'Hello world!';
 	$scope.productList = populateProducts;
+	//TODO: Load language from elsewhere.
+	$scope.productCardDefaultText = {
+		'id': 'Product ID: ',
+		'name': 'Product Name: '
+	};
 }]);

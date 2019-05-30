@@ -3,9 +3,12 @@
  */
 .productCard {
 	margin: 0.5em;
-	display: inline-block;
+	display: inline-grid;
 	-webkit-box-shadow: 4px 6px 5px 0px rgba(148,148,148,1);
 	-moz-box-shadow: 4px 6px 5px 0px rgba(148,148,148,1);
 	box-shadow: 4px 6px 5px 0px rgba(148,148,148,1);
-	background-color: blue;
+	background-color: #b6cbed;
+}
+.productCardInfo {
+	margin: 0.5em;
 }
