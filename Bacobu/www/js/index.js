@@ -1,6 +1,10 @@
 var bacobuStore = angular.module('bacobuStore',[]);
 
 /*
+ * Product-specific modules START
+ */
+
+/*
  * TODO: Remove test data and connect to database
  */
  bacobuStore.value('productList', [{"id":0,"name":"TestNecklace","price":25.00,"images":[{"mainImg":{"location":"images/testNecklace.jpg","description":"Blurry image of a necklace. Silver toned chain, green arc pendent wrapped in copper with green bead in center."}}]},{"id":1,"name":"TestNecklace","price":25.00,"images":[{"mainImg":{"location":"images/testNecklace.jpg","description":"Blurry image of a necklace. Silver toned chain, green arc pendent wrapped in copper with green bead in center."}}]},{"id":2,"name":"TestNecklace","price":25.00,"images":[{"mainImg":{"location":"images/testNecklace.jpg","description":"Blurry image of a necklace. Silver toned chain, green arc pendent wrapped in copper with green bead in center."}}]},{"id":3,"name":"TestNecklace","price":25.00,"images":[{"mainImg":{"location":"images/testNecklace.jpg","description":"Blurry image of a necklace. Silver toned chain, green arc pendent wrapped in copper with green bead in center."}}]},{"id":4,"name":"TestNecklace","price":25.00,"images":[{"mainImg":{"location":"images/testNecklace.jpg","description":"Blurry image of a necklace. Silver toned chain, green arc pendent wrapped in copper with green bead in center."}}]},{"id":5,"name":"TestNecklace","price":25.00,"images":[{"mainImg":{"location":"images/testNecklace.jpg","description":"Blurry image of a necklace. Silver toned chain, green arc pendent wrapped in copper with green bead in center."}}]},{"id":6,"name":"TestNecklace","price":25.00,"images":[{"mainImg":{"location":"images/testNecklace.jpg","description":"Blurry image of a necklace. Silver toned chain, green arc pendent wrapped in copper with green bead in center."}}]}]);
@@ -14,6 +18,29 @@ bacobuStore.factory('populateProducts', ['productList', function(productList) {
 	// console.log(productList);
     return productList;
 }]);
+
+/*
+ * Product-specific modules END
+ */
+
+/*
+ * Cart-specific modules START
+ */
+
+bacobuStore.directive('cart', function() {
+  return {
+    templateUrl: 'templates/cart.html'
+  };
+});
+
+/*
+ * Cart-specific modules END
+ */
+
+
+/*
+ * Main page modules START
+ */
 
 /*
  * Used to handle display on the page which displays products.
@@ -39,3 +66,7 @@ bacobuStore.controller('IndexCtrl', ['$scope', 'populateProducts', function($sco
 		$scope.cart.numItems++;
 	};
 }]);
+
+/*
+ * Main page modules END
+ */
