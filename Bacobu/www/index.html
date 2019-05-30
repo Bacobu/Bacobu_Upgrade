@@ -27,7 +27,7 @@
 				<p class="productCardInfo">
 					{{productCardDefaultText.name}} {{product.name}}
 				</p>
-				<img ng-src="{{product.imageLocation.mainImg}}"/>
+				<img ng-src="{{product.images[0].mainImg.location}}" alt="{{product.images[0].mainImg.description}}" class="productCardInfo"/>
 			</div>
 		</div>
 	</body>
