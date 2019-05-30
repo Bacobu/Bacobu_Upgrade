@@ -31,6 +31,9 @@
 				<p class="productCardInfo">
 					{{productCardDefaultText.name}} {{product.name}}
 				</p>
+				<p class="productCardInfo">
+					{{productCardDefaultText.price}} {{product.price | currency}}
+				</p>
 				<img ng-src="{{product.images[0].mainImg.location}}" alt="{{product.images[0].mainImg.description}}" class="productCardInfo"/>
 				<button ng-click="cart.updateCart()">
 					{{productCardDefaultText.addToCartBtn}}

@@ -27,6 +27,7 @@ bacobuStore.controller('IndexCtrl', ['$scope', 'populateProducts', function($sco
 	$scope.productCardDefaultText = {
 		'id': 'Product ID: ',
 		'name': 'Product Name: ',
+		'price': 'Price (USD): ',
 		'addToCartBtn': 'Add to Cart'
 	};
 	//TODO: Move cart information into appropriate provider type
