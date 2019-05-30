@@ -21,7 +21,7 @@ bacobuStore.factory('populateProducts', ['productList', function(productList) {
  */
 bacobuStore.controller('IndexCtrl', ['$scope', 'populateProducts', function($scope,populateProducts) {
 	$scope.pageTitle = 'Welcome to Bacobu Jewelry!';
-	$scope.pageDescription = 'Hello world!';
+	$scope.pageDescription = 'Current status: Product cards will auto-wrap with screen size adjustment. Products are generated from a JSON array pasted into Angular 1. Accessible alt text is present on images.';
 	$scope.productList = populateProducts;
 	//TODO: Load language from elsewhere.
 	$scope.productCardDefaultText = {
